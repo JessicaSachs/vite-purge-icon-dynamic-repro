@@ -4,6 +4,7 @@ import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
+import PurgeIcons from 'vite-plugin-purge-icons'
 import ViteComponents from 'vite-plugin-components'
 import Markdown from 'vite-plugin-md'
 import WindiCSS from 'vite-plugin-windicss'
@@ -74,6 +75,7 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-icons
     ViteIcons(),
+    PurgeIcons(),
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS({
